@@ -1,0 +1,293 @@
+:root{
+    --CouleurMonArrivee_en_Tunisie : #ba5a06;
+    --CouleurParagraphe : #b5631b;
+    --CouleurTitre_h2 : #705d08;
+    --CouleurLieux : #EB7913;
+    --CouleurContactermoi : #367c38;
+    --CouleurLabel : #808017;
+    --CouleurLien : #0FABFF;
+    --CouleurLienHover : #f27b13;
+    --CouleurArrierePlan : #f5e1d7;
+    --CouleurTitre_h3 : #997f09;
+    --TailleBody : 18px;
+    --TailleLien : 18px;
+    --TailleEnteteFormulaire : 23px;
+    --TailleAccusedeReception : 25px;
+    --TailleTitreSouligne : 21px;
+    --Padding-left-Formulaire : 24px;
+    --Taille-paragraphe-footer :21px;
+}
+
+h1{
+    color: var(--CouleurMonArrivee_en_Tunisie);
+}
+
+header {
+    background-color: var(--CouleurArrierePlan);
+}
+body {
+    background-color: var(--CouleurArrierePlan);
+}
+h2{
+    color: var(--CouleurTitre_h2);
+}
+h3{
+    color: var(--CouleurTitre_h3);
+}
+p{
+    font-size: var(--TailleBody);
+    color: var(--CouleurParagraphe);
+}
+ol{
+    font-size: 18px;
+}
+ul{
+    font-size: var(--TailleBody);  
+}
+
+footer {
+   background-color: var(--CouleurArrierePlan); 
+}
+img {
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+nav ul {
+    list-style-type: circle;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    color: var(--CouleurLienHover);
+    
+}
+nav a:active {
+    color: var(--CouleurLien);
+}
+
+table {
+    border : 2px solid black;
+    border-collapse:collapse;
+    text-align: center;
+}
+ 
+nav ul {
+    display: flex;
+    gap:50px;
+}
+
+nav li {
+    padding-left: 100px;
+}
+
+.couleurLieux {
+    color: var(--CouleurLieux);
+}
+
+#couleurPlages {
+    color: var(--CouleurLien);
+}
+
+h4 {
+    font-size: var(--TailleEnteteFormulaire);
+    color: var(--CouleurContactermoi);
+}
+
+label {
+    color: var(--CouleurLabel);
+    font-size: var(--TailleBody);
+    padding-left: var(--Padding-left-Formulaire);
+}
+
+#EnvoyerFormulaireInscription:hover {
+    color: var(--CouleurLienHover);
+    
+}
+
+#EnvoyerFormulaireInscription {
+    color: var(--CouleurLien);
+    font-size: var(--TailleLien);
+}
+
+.TailleTitrePageTunisie {
+    text-decoration: underline;
+    font-size: var(--TailleTitreSouligne);
+}
+
+#LienConnexionFormulaireConnexion:hover {
+    color: var(--CouleurLienHover);
+}
+
+#LienConnexionFormulaireConnexion {
+    color: var(--CouleurLien);
+    font-size: var(--TailleLien)
+}
+
+#TitreFormulairedeconnexion {
+    font-size: var(--TailleEnteteFormulaire);
+    text-decoration: underline;
+}
+
+.CouleurLienPageFormulaireDeConnexion {
+    color: var(--CouleurLien);
+    font-size: var(--TailleLien);
+    padding-left: var(--Padding-left-Formulaire);
+
+}
+
+.CouleurBouttonSeConnecterEtCliquerIci {
+    padding-left: var(--Padding-left-Formulaire);
+} 
+
+.TailleEntete-Connexion-MdpOublie {
+    font-size: var(--TailleEnteteFormulaire);
+}
+
+#LienEnvoyerMotdePasseOublie {
+    color: var(--CouleurLien);
+    padding-left: var(--Padding-left-Formulaire);
+    font-size: var(--TailleLien);
+}
+
+#LienEnvoyerMotdePasseOublie:hover {
+    color: var(--CouleurLienHover);
+}
+
+#MessageReponse {
+    font-size: var(--TailleAccusedeReception);
+    display : flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--CouleurParagraphe);
+}
+#PhraseAcrrocheMessageConnexion {
+    font-size: var(--TailleEnteteFormulaire);
+    text-decoration: underline;
+
+}
+#LienEnvoyerMessageConnexion {
+    color: var(--CouleurLien);
+    font-size: var(--TailleLien);
+}
+
+#LienEnvoyerMessageConnexion:hover {
+    color: var(--CouleurLienHover);
+}
+#LienModifierMdp {
+    color: var(--CouleurLien);
+    font-size: var(--TailleLien);
+
+}
+
+#LienModifierMdp:hover {
+    color: var(--CouleurLienHover);
+}
+
+.CouleurEntête-Connexion-Mdp {
+    font-size: var(--TailleEnteteFormulaire);
+}
+
+#MessageReinitialisationMdp {
+    font-size: var(--TailleAccusedeReception);
+    display:flex;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--CouleurParagraphe);
+}
+
+#ModificationBoutonModif-Mdp {
+    padding-left: var(--Padding-left-Formulaire);
+}
+
+.CouleurModificationMotdePasse {
+    color: var(--CouleurParagraphe);
+}
+
+#LienReinitialise {
+    color: var(--CouleurLien);
+    font-size: var(--TailleLien);
+}
+
+footer p {
+    font-size: var(--Taille-paragraphe-footer);
+    color: var(--CouleurTitre_h2);
+
+}
+
+#lien_Photos_souvenirs {
+    font-size: 18px;
+    color: #0FABFF;
+
+}
+
+.galerie {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    
+
+}
+
+.carte-photos {
+     background-color:#4bcde4;
+     color: #705d08;
+     border-radius: 5px;
+     box-shadow: 10px 10px 10px #8b9496;
+     padding: 40px 50px;
+
+}
+
+.carte-photos:hover {
+    background-color:#25c4b4;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+#Photo_panorama_plage {   
+    grid-column: span 2;
+    padding-left: 70px;
+}
+
+.tableau_de_bord {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#Panorama_photo_plage {
+    grid-column: span 2;
+    padding-left: 60px ;
+}
+
+#Panorama_resume_sejour {
+    grid-column: span 3;
+}
+    
+
+.resume_carte {
+    padding-left: 20px;
+    box-shadow: 0px 0px 0px;
+}
+
+.resume_carte:hover {
+    transform:scale(1.08);
+    transition: transform 0.3s ease;
+}
+
+#Panorama_photo_plage:hover {
+    transform: rotate(360deg);
+    transition: transform 2s ease;
+}
+
+#resume_sejour1:hover {
+    transform: translateX(20px);
+    transform: translateY(20px);
+    transition: transform 0.5s ease-out;
+}
