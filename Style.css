@@ -291,3 +291,8 @@ footer p {
     transform: translateY(20px);
     transition: transform 0.5s ease-out;
 }
+
+#score_phrase {
+    color: #e03030;
+}
+
