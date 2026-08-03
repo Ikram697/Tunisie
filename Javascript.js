@@ -42,7 +42,7 @@ let restaurant_nombre = parseFloat (restaurants_texte);
 let restaurant_convertis = restaurant_nombre * taux_de_change;
 
 let courses_texte = courses_euros.innerText;
-let courses_nombre = parseFloat (courses_texte);
+let courses_nombre = parseFloat (courses_texte);   
 let courses_convertis = courses_nombre * taux_de_change;
 
 let activites_texte = activites_euros.innerText;
@@ -65,4 +65,13 @@ bouton_conversion.addEventListener("click",function() {
     activites_dinards.innerHTML = activites_convertis;
     souvenirs_dinards.innerHTML = souvenirs_convertis;
     total_dinards.innerHTML = total_convertis;
+});
+
+const bouton_bleu = document.getElementById("Bouton_bleu");
+const titre_bleu = document.getElementById("Titre_bleu");
+
+
+bouton_bleu.addEventListener("click",function() {
+    titre_bleu.style.color = "blue";
+    
 });
