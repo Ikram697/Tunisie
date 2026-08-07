@@ -4,6 +4,10 @@ const p = document.getElementById("Phrase_paragraphe");
 button.addEventListener("click",function() {
     button.innerHTML = "Vous m'avez cliqué.";
     p.innerHTML = "Vous maitrisez le DOM.";
+    p.style.fontSize = "25px";
+    p.style.fontStyle = "italic";
+    p.style.fontWeight = "bolder";
+
 });
 
 const bouton_decollage = document.getElementById("Bouton_decollage");
@@ -58,6 +62,8 @@ let total_nombre = parseFloat(total_texte);
 let total_convertis = total_texte * taux_de_change;
 
 
+const tableau = document.getElementById("style_tableau");
+
 bouton_conversion.addEventListener("click",function() {
     billet_avion_dinards.innerHTML = billet_avion_convertis;
     restaurants_dinards.innerHTML = restaurant_convertis;
@@ -65,6 +71,7 @@ bouton_conversion.addEventListener("click",function() {
     activites_dinards.innerHTML = activites_convertis;
     souvenirs_dinards.innerHTML = souvenirs_convertis;
     total_dinards.innerHTML = total_convertis;
+    tableau.style.borderCollapse = "separate";
 });
 
 const bouton_bleu = document.getElementById("Bouton_bleu");
@@ -75,3 +82,5 @@ bouton_bleu.addEventListener("click",function() {
     titre_bleu.style.color = "blue";
     
 });
+
+const bouton_elements_valise = document.getElementById("bouton_valise");
