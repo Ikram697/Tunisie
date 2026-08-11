@@ -84,3 +84,10 @@ bouton_bleu.addEventListener("click",function() {
 });
 
 const bouton_elements_valise = document.getElementById("bouton_valise");
+const listes_elements_valise = document.getElementById("divers_elements");
+
+bouton_elements_valise.addEventListener("click",function() {
+    listes_elements_valise.style.display = "block";
+    
+    });
+
