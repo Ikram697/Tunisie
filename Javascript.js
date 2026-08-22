@@ -91,3 +91,36 @@ bouton_elements_valise.addEventListener("click",function() {
     
     });
 
+
+const poids = 27;
+
+if (poids <= 23) {
+    console.log ("Bon Voyage");
+}
+else if (poids <= 25) {
+    console.log ("Valise limite");
+}
+else {
+    console.log ("Vous allez payer une surtaxe");
+}
+
+
+const input = document.getElementById("nombre");
+const bouton_verifier = document.getElementById("Verification");
+const message = document.getElementById("message");
+
+bouton_verifier.addEventListener("click",function(){
+    let conversion_poids_valise = parseFloat(input.value);
+
+    if (conversion_poids_valise <= 15) {
+        message.innerHTML = "Bonne nouvelle, votre valise est dans la limite autorisée.";
+        message.style.color = "green";
+    }else {
+        message.innerHTML = "Votre valise sera surtaxé car en surpoids.";
+        message.style.color = "red";
+    }
+    console.log(conversion_poids_valise);
+
+});
+
+
