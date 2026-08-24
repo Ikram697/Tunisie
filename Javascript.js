@@ -112,15 +112,33 @@ const message = document.getElementById("message");
 bouton_verifier.addEventListener("click",function(){
     let conversion_poids_valise = parseFloat(input.value);
 
-    if (conversion_poids_valise <= 15) {
+    if (conversion_poids_valise <=0) {
+        message.innerHTML = "Merci d'inscrire une valeur positive.";
+        message.style.color = "orange";
+    }
+    else if (conversion_poids_valise <= 15) {
         message.innerHTML = "Bonne nouvelle, votre valise est dans la limite autorisée.";
         message.style.color = "green";
-    }else {
+    }
+    
+    else if (conversion_poids_valise > 15 && conversion_poids_valise <= 25) {
         message.innerHTML = "Votre valise sera surtaxé car en surpoids.";
         message.style.color = "red";
     }
-    console.log(conversion_poids_valise);
+    
+    else if (conversion_poids_valise >25 && conversion_poids_valise <=50) {
+        message.innerHTML = "Désolé, nous ne prenons pas de bagages de cette taille.";
+        message.style.color = "purple";
+    }
+    else if (conversion_poids_valise > 50 && conversion_poids_valise < 100) {
+        message.innerHTML = "Vous êtes un blagueur.";
 
-});
+    }
+    else { 
+        message.innerHTML = "Vous vous moquez de moi.";
+    }
+
+    console.log(conversion_poids_valise);
+}); 
 
 
