@@ -141,4 +141,44 @@ bouton_verifier.addEventListener("click",function(){
     console.log(conversion_poids_valise);
 }); 
 
+const input2 = document.getElementById("nombre2");
+const bouton_evaluation = document.getElementById("Evaluation");
+const message2 = document.getElementById("message2");
 
+bouton_evaluation.addEventListener("click",function(){
+    let note_evaluation = parseFloat(input2.value);
+
+    if (note_evaluation <0) {
+        message2.innerHTML = "Merci d'indiquer une valeur positive.";
+    }
+
+    else if (note_evaluation === 0 ){
+        message2.innerHTML = "Nul";
+    }
+
+    else if (note_evaluation >0 && note_evaluation <3) {
+        message2.innerHTML ="Très faible";
+    } 
+
+    else if (note_evaluation <=3 && note_evaluation <5) {
+        message2.innerHTML = "Faible";
+    }
+
+    else if (note_evaluation >=5 && note_evaluation <8) {
+        message2.innerHTML = "Satisfaisant";
+    }
+
+    else if (note_evaluation >=8 && note_evaluation <10) {
+        message2.innerHTML = "Très bien";
+    }
+
+    else if (note_evaluation ===10) {
+        message2.innerHTML = "Parfait";
+    }
+    else {
+        message2.innerHTML = "Merci d'inscrire une valeur comprise entre 0 et 10.";
+    }
+
+    console.log(note_evaluation);
+
+});
