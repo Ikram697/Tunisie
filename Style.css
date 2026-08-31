@@ -291,3 +291,21 @@ footer p {
     transform: translateY(20px);
     transition: transform 0.5s ease-out;
 }
+
+#score_phrase {
+    color: #e03030;
+}
+
+#divers_elements {
+    padding: 30px;
+    margin-top: 25px;
+    border-left: 10px double blue;
+    background-color : #2fc9e0;
+    width: 300px;
+    border-top-right-radius: 80%;
+    display: none;
+}
+
+#Message_Bienvenue {
+    display: none;
+}

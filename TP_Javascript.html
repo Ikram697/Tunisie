@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- commentaires -->
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>TP_JAVASCRIPT</title>
+        <link rel="stylesheet" href="Style.css"> <!-- balise de liaison avec le fichier CSS -->
+    </head> 
+
+<body>
+    <br><button id="Bouton_bleu">Bouton bleu</button>
+    <h1 id="Titre_bleu">TP JAVASCRIPT</h1>
+
+    <button id="Bouton">Cliquer moi</button>
+
+    <p id="Phrase_paragraphe"></p>
+
+
+
+
+    <h1>DEPART IMMINENT !</h1>
+    <h2>Aéroport de <span id="Aeroport">Lyon St Exupéry</span></h2>
+    <br><br><img id="Image_Aeroport"src="Aeroport_de_Lyon_St_Exupery.jpg" alt="Aéroport de Lyon St Exupéry" width ="600" height="400" > 
+
+
+
+    <br><br><br><button id="Bouton_decollage">Décollage vers Tunis</button>
+
+
+    <br><br><h3>CREATION D'UN TABLEAU AVEC MES DEPENSES</h3>
+
+<br> 
+<table id="style_tableau" border="1" width="500" height="300">
+
+    <tr>
+        <th>Libellé</th>
+        <th>Montant en Euros</th>
+        <th>Montant en Dinards</th>
+    </tr>
+
+    <tr>
+        <td>Billet d'avion</td>
+        <td id="billet_avion_en_euros">600</td>
+        <td id="billet_avion_en_dinards"> </td>
+    <tr>
+
+    <tr>
+        <td>Restaurants</td>
+        <td id="depenses_restaurants_en_euros">200</td>
+        <td id="depenses_restaurants_en_dinards"> </td>
+    </tr>
+
+    <tr>
+        <td>Courses</td>
+        <td id="courses_en_euros">100</td>
+        <td id="courses_en_dinards"> </td>
+    </tr>
+
+    <tr>
+        <td>Activités</td>
+        <td id="activites_en_euros">200</td>
+        <td id="activites_en_dinards"> </td>
+    </tr>
+
+    <tr>
+        <td>Souvenirs</td>
+        <td id="souvenirs_en_euros">50</td>
+        <td id="souvenirs_en_dinards"> </td>
+    </tr>
+
+    <tr>
+        <td><strong>TOTAL</strong></td>
+        <td id="total_en_euros">1150</td>
+        <td id="total_en_dinards"> </td>
+    </tr>
+
+</table>
+
+<br><br><button id="Bouton_conversion">Conversion en Dinards</button>
+
+<br><br><h3>ORGANISATION VOYAGE</h3>
+<p>Mon voyage approche, je dois préparer ma valise pour mon départ en Tunisie. 
+    <br>Voici ce que j'apporterai avec moi. Clique sur le bouton "Ouvre ma valise" pour afficher
+    <br>les divers éléments.
+</p>
+
+<br><button id="bouton_valise">Ouvre ma valise</button>
+
+<div id="divers_elements">
+    <ul>
+        <li>vêtements</li>
+        <li>chaussures</li>
+        <li>trousse de toilettes</li>
+        <li>sèche cheveux</li>
+        <li>maquillages</li>
+        <li>cadeaux familles/amis</li>
+    </ul>
+</div>
+
+<div>
+
+    <h4>Merci d'indiquer le poids de votre valise pour voir si elle
+est dans la limite aurorisée puis cliquer sur le bouton vérifier.</h4>
+
+    <br><input type="number" id="nombre" required placeholder="ex: 12">
+    <br><br><button id="Verification">VERIFIER MON BAGAGE</button>
+    <br><br><p id="message"></p>
+    
+</div>
+
+
+<div>
+
+    <h5>Merci d'indiquer une note sur 10 pour évaluer mon site.</h5>
+
+    <br><input type="number" id="nombre2" required placeholder="ex: 8">
+    <br><br><button id="Evaluation">EVALUER MON SITE</button>
+    <br><br><p id="message2"></p>
+
+</div>
+
+<h3>Formulaire de Connexion</h3>
+<form id="Formulaire_Connexion" action="#" method="POST">
+
+    <div>
+        <br><label for="Nom">Pseudo :</label>
+        <input type="text" id="nom" name="nom" required placeholder="Doe">
+    </div>
+
+    <div>
+        <br><label for="MotdePasse">Mot de Passe :</label>
+        <input type="password" id="MotdePasse" name="MotdePasse" required placeholder="Entrer votre mot de passe">
+    </div>
+
+    <div>
+        <br><label for="Submit"></label>
+        <button type="submit">Se connecter</button>
+    </div>
+
+</form>
+
+<div id="Message_Bienvenue">
+    <h3>Bienvenue <span id="Pseudo_afficher"></span></h3>
+    <p>Tu es bel et bien connectée.</p>
+</div>
+
+</body>
+
+<script src="Javascript.js"></script>
+</html>
+
+
+
