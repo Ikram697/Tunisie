@@ -182,3 +182,20 @@ bouton_evaluation.addEventListener("click",function(){
     console.log(note_evaluation);
 
 });
+ 
+const Formulaire = document.getElementById("Formulaire_Connexion");
+let Pseudo = document.getElementById("nom");
+let Mot_de_Passe = document.getElementById("MotdePasse");
+const Message_de_Bienvenue = document.getElementById("Message_Bienvenue");
+let mon_pseudo = document.getElementById("Pseudo_afficher");
+
+Formulaire.addEventListener("submit",function(){
+    event.preventDefault();
+    let Pseudo_taper = Pseudo.value;
+    let Mot_de_Passe_taper = Mot_de_Passe.value;
+    localStorage.setItem("Nom", Pseudo_taper);
+    localStorage.setItem("Mot_de_Passe",Mot_de_Passe_taper);
+    Formulaire.style.display = "none";
+    mon_pseudo.innerHTML = Pseudo_taper;
+    Message_de_Bienvenue.style.display = "block";
+});

@@ -119,6 +119,31 @@ est dans la limite aurorisée puis cliquer sur le bouton vérifier.</h4>
 
 </div>
 
+<h3>Formulaire de Connexion</h3>
+<form id="Formulaire_Connexion" action="#" method="POST">
+
+    <div>
+        <br><label for="Nom">Pseudo :</label>
+        <input type="text" id="nom" name="nom" required placeholder="Doe">
+    </div>
+
+    <div>
+        <br><label for="MotdePasse">Mot de Passe :</label>
+        <input type="password" id="MotdePasse" name="MotdePasse" required placeholder="Entrer votre mot de passe">
+    </div>
+
+    <div>
+        <br><label for="Submit"></label>
+        <button type="submit">Se connecter</button>
+    </div>
+
+</form>
+
+<div id="Message_Bienvenue">
+    <h3>Bienvenue <span id="Pseudo_afficher"></span></h3>
+    <p>Tu es bel et bien connectée.</p>
+</div>
+
 </body>
 
 <script src="Javascript.js"></script>

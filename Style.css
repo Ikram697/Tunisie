@@ -305,3 +305,7 @@ footer p {
     border-top-right-radius: 80%;
     display: none;
 }
+
+#Message_Bienvenue {
+    display: none;
+}

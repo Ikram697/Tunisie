@@ -8,3 +8,5 @@ button_2.addEventListener ("click",function() {
     affichage_like.innerHTML = Score; 
 
 });
+
+
